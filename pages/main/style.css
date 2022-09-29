@@ -327,14 +327,55 @@ h5 {
     flex-shrink: 0;
     border: 1px solid orange;
     border-radius: 5px;
+    position: relative;
 }
 
 .card-image  {
     box-sizing: border-box;
     width: 368px;
     height: 367px;
+    position: relative;
 
 }
+
+.card-image::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0px;
+    bottom: 300px;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: 0.6;
+
+}
+
+.card-image:hover::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.3;
+    transition: 0.6;
+
+}
+
+.card:hover .image-descr {
+    position: absolute;
+
+    transition: all 0.75s ease-out;
+    color: white;
+    transform: translate(0%, -130%);
+
+}
+
+
 
 .card-image img {
     padding: 0;
