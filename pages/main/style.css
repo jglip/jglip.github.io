@@ -41,13 +41,13 @@ header {
     height: 81px;
     width: 100%;
 
-    padding: 14px 220px;
+    padding: 14px 220px 0;
 
     color: white;
 
 }
 
-.logo {
+.logo h1, .logo p {
 
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
@@ -57,9 +57,9 @@ header {
     text-align: center;
     font-size: 19px;
 
-    line-height: 24px;
+    line-height: 23px;
 
-    padding: 3px 3px;
+    padding: 3px 4px 0;
 
     border: 1px solid white;
     border-radius: 2px;
@@ -67,15 +67,12 @@ header {
     width: 82px;
     height: 52px;
 
-}
-
-.logo p {
     margin: 0;
-    padding: 0;
     text-align: center;
+
 }
 
-.logo  p a {
+.logo  h1 a, .logo p a {
     text-decoration: none;
     color: white;
 }
@@ -84,7 +81,7 @@ header {
     position: relative;
     content: url("../../assets/icons/bamboo.svg");
     top: -27px;
-    left: -26px;
+    left: 11px;
 
 }
 
@@ -100,8 +97,8 @@ nav, .designSource {
 }
 
 nav {
-    width: 945px;
-    margin-left: 25px;
+    width: 948px;
+    margin-left: 24px;
 }
 
 nav a, .designSource a {
@@ -116,7 +113,7 @@ nav a:hover, .designSource a:hover {
 nav li {
 
     list-style-type: none;
-    margin-right: 59px;
+    margin-right: 58px;
 }
 
 .section-header {
@@ -141,7 +138,7 @@ nav li {
 }
 
 
-h1 {
+h2 {
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
@@ -257,7 +254,7 @@ button:active {
     width: 465px;
 }
 
-h2 {
+h3 {
     padding: 0 0 6px 0;
     margin: 0 0 0px 0px;
     font-size: 48px;
@@ -265,7 +262,7 @@ h2 {
     letter-spacing: -0.35px;
 }
 
-h4 {
+h5 {
 
     margin: 53px 0 35px;
     font-size: 24px;
@@ -336,6 +333,7 @@ h4 {
     box-sizing: border-box;
     width: 368px;
     height: 367px;
+
 }
 
 .card-image img {
@@ -356,7 +354,7 @@ h4 {
 
 }
 
-.animal-name h5 {
+.animal-name h6 {
     margin: 8px 15px 0;
     padding: 0;
     font-size: 16px;
@@ -432,7 +430,7 @@ h4 {
     padding: 39px 100px 40px 100px;
 }
 
-.peek-and-feed h2 {
+.peek-and-feed h3 {
     color: #FE9013;
     font-weight: 400;
     text-align: center;
@@ -440,8 +438,10 @@ h4 {
 
 
 }
-.peek-and-feed h4 {
+.peek-and-feed h5 {
     margin-top: 23px;
+
+    font-weight: 400;
 }
 
 .first-p {
@@ -462,15 +462,16 @@ h4 {
     border-bottom: 1px solid #FE9013;
 
 }
-.peek-and-feed h3 {
+.peek-and-feed h4 {
     margin-top: 57px;
     font-weight: 400;
     font-size: 36px;
     line-height: 130%;
     text-align: center;
+    margin-bottom: 35px;
 }
 
-h3 {
+h4 {
 
     font-weight: 400;
     font-size: 36px;
@@ -544,39 +545,63 @@ h3 {
     margin: 58px auto 0px;
 }
 
-.section-fourth {
+.testimonials  h4 {
+    margin-bottom: 45px;
+    padding: 0
+}
 
-    padding-top: 103px;
+.section-fourth {
+    padding-top: 93px;
     padding-bottom: 180px;
 }
 
 .reviews {
     justify-content: space-between;
-    padding-top: 10px;
+
 }
 
 .card-review {
     box-sizing: border-box;
     width: 268px;
     height: 391px;
-    background: #F1F3F2;
-    border-radius: 20px;
-    border: 2px solid violet;
-
     padding: 13px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
+
+    background-color: #F1F3F2;
+    background-clip: padding-box;
+    border: solid 3px transparent;
+    border-radius: 20px;
 }
+
+.card-review:before {
+    content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: inherit;
+  background: linear-gradient(315deg, rgb(254, 189, 171), rgb(243, 169, 248) 65%, rgb(205, 215, 240) 89%);
+}
+
+/* background: linear-gradient(315deg, rgb(254, 189, 171) 18%, rgb(243, 169, 248) 35%, rgb(234, 247, 254) 86%);
+    background-clip: border-box; */
+
+
 
 .card-review p {
     font-size: 15px;
     font-weight: 300;
-    /* padding: 0; */
-    margin: 2px;
+
+    margin: 0 2px;
     line-height: 18px;
 }
 
 .text-review {
-    padding-top: 5px;
+    padding-top: 8px;
     height: 306px;
     overflow: hidden;
 }
@@ -600,13 +625,15 @@ h3 {
 }
 
 .user-data .user-name {
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .user-name {
     color: #000;
     margin: 0;
     padding: 0;
+
 }
 .user-location, .user-date, .user-text > span {
     margin: 0;
@@ -617,29 +644,41 @@ h3 {
 
 .slider-line {
     box-sizing: border-box;
-    margin: 21px auto 32px;
+    margin: 21px auto 31px;
     width: 599px;
     height: 8px;
-    background: #f5f7f6;
+
     border-radius: 5px;
-    border: 1px solid violet;
     position: relative;
-    box-shadow: -1px 4px 2px 0px lightgray;
+    /* box-shadow: -1px 4px 2px 0px lightgray; */
 
+    background: #f5f7f6;
+    border: 0.5px solid transparent;
+    background-clip: padding-box;
+}
 
+.slider-line:before {
+    content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: inherit;
+  background: linear-gradient(315deg, rgb(254, 189, 171), rgb(243, 169, 248) 65%, rgb(205, 215, 240) 89%);
 }
 
 .slider-line-position {
     position: absolute;
-width: 115px;
-height: 6px;
-left: calc(50% - 115.19px/2 - 242.4px);
-top: 0px;
+    width: 115px;
+    height: 6px;
+    left: calc(50% - 115.19px/2 - 242.4px + 3px);
+    top: 0px;
 
-
-
-background: #FE9013;
-border-radius: 5px;
+    background: #FE9013;
+    border-radius: 5px;
 }
 
 .radius-5 {
@@ -662,11 +701,17 @@ border-radius: 5px;
 
 footer {
     background-color: #111115;
-    padding: 38px 0 45px;
+    padding: 41px 0 42px;
 }
 
 .footer-top {
     justify-content: space-between;
+}
+.footer-logo .logo p {
+    padding: 0;
+    margin: 0;
+
+
 }
 
 .footer-form {
@@ -676,7 +721,8 @@ footer {
     font-size: 24px;
     line-height: 120%;
     padding-left: 35px;
-    padding-top: 3px;
+    padding-top: 1px;
+    padding-bottom: 3px;
     color: #FFFFFF;
 }
 
@@ -686,7 +732,8 @@ footer {
     font-size: 24px;
     line-height: 120%;
     color: #FFFFFF;
-    margin: 0px 0 14px;
+    margin: 0px 0 13px;
+    padding-left: 3px;
 }
 
 input[type=email] {
@@ -698,7 +745,8 @@ input[type=email] {
     font-size: 16px;
     background-color: #111115;
     color: #bdbdbd;
-    margin-right: 7px;
+
+    margin: 0 4px 0 3px;
     padding: 10px;
 
 }
@@ -710,9 +758,9 @@ input[type=submit] {
     box-sizing: border-box;
     border: 1px solid #000;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: 16px;
     color: #000;
-    
+
 }
 
 input[type=submit]:hover, input[type=submit]:active {
@@ -721,7 +769,7 @@ input[type=submit]:hover, input[type=submit]:active {
 }
 
 .footer-middle {
-    padding: 38px 0 31px;
+    padding: 34px 0 31px;
 }
 
 .footer-bottom {
@@ -799,10 +847,10 @@ input[type=submit]:hover, input[type=submit]:active {
 
 .footer-nav a {
     font-weight: 400;
-font-size: 16px;
-line-height: 140%;
-color: #FFFFFF;
-text-decoration: none;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .footer-nav a:hover {
