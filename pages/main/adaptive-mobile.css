@@ -1,0 +1,347 @@
+@media (max-width: 639px) {
+
+    .wrapper-1600 {
+        width: 100%;
+        overflow: hidden;
+        min-width: 320px;
+    }
+
+    .wrapper-1160 {
+        width: 93%;
+        min-width: 300px;
+    }
+
+    .wrapper-976 {
+        width: 300px;
+    }
+
+    .container-for-mobile {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    nav, .designSource {
+        display: none;
+    }
+
+    header {
+        height: 34px;
+        padding: 0px 0 3px 7px;
+        position: fixed;
+        justify-content: space-between;
+
+    }
+
+    .burger-menu {
+        display: block;
+        margin: 12px 10px 0 0;
+    }
+
+    header .logo::after {
+        top: -17px;
+        left: 5px;
+        content: url("../../assets/icons/bamboo-tablet.svg");
+    }
+
+    .section-header {
+        height: 221px;
+        /* min-height: 221px;
+        max-height: 372px; */
+        background-position: 46% 72%;
+        background-size: cover;
+    }
+
+    .heading {
+        width: 119px;
+        height: 119px;
+        top: 25%;
+        left: 51%;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 75%;
+        top: 19px;
+        left: 18px;
+        width: 128px;
+        letter-spacing: 0px;
+    }
+
+    .block-button-watch-online {
+        text-align: center;
+    }
+
+    .section-header button {
+        margin-top: 122px;
+        /* margin-left: 12px; */
+        margin-bottom: 30px;
+    }
+
+    .flower-right-top {
+        display: block;
+        right: -43px;
+        bottom: -190px;
+        width: 75px;
+    }
+
+    .d-text-field {
+        padding-left: 0px;
+        padding-bottom: 40px;
+        height: auto;
+        line-height: 120%;
+    }
+
+    .d-text-field h3 {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0;
+        margin-bottom: 0px;
+        margin-top: 44px;
+        line-height: 30px;
+    }
+
+    .d-text-field p {
+        margin-top: 9px;
+        line-height: 137%;
+    }
+
+    .d-text-field h5 {
+        margin-top: 18px;
+        margin-bottom: 9px;
+    }
+
+    .animal-cards {
+        height: 1349px;
+        margin-top: 0px;
+
+    }
+    .card {
+
+        margin-bottom: 20px;
+    }
+
+    .arrow-left, .arrow-right {
+        display: none;
+    }
+
+    .section-second button {
+        margin-bottom: 60px;
+
+    }
+
+    .flowers-bottom::before {
+        left: -13px;
+        background-size: 36%;
+        top: -72px;
+    }
+
+    .flower-right-bottom {
+        width: 87px;
+        right: -18px;
+        bottom: -2px;
+    }
+
+    .section-third .wrapper-1160 {
+        width: 300px;
+    }
+
+    .peek-and-feed {
+        padding: 8px 10px;
+        height: 1042px;
+    }
+
+    .peek-and-feed h3 {
+        padding: 0px 0 0px 0;
+        margin: 0 0 0px 0px;
+        font-size: 24px;
+        line-height: 51px;
+        letter-spacing: 0;
+    }
+
+    .peek-and-feed h5 {
+        margin-top: 0px;
+        margin-bottom: 17px;
+        text-align: center;
+        line-height: 123%;
+        font-size: 18px;
+    }
+
+    .first-p, .second-p {
+        display: none;
+    }
+
+    .peek-and-feed h4 {
+        margin-top: 19px;
+        margin-bottom: 16px;
+        font-size: 24px;
+    }
+
+    .widgets-block {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0 0 0px;
+        justify-content: space-around;
+    }
+
+    .widget:nth-child(1)::after, .widget:nth-child(2)::after {
+
+        top: 142px;
+        left: 74px;
+        transform: rotate(85deg);
+    }
+
+    .widget p {
+        padding-top: 0px;
+        margin-top: 9px;
+    }
+
+    .text-review {
+        padding-top: 7px;
+        padding-left: 8px;
+    }
+
+    .feed-frend {
+        margin: 15px auto 0;
+    }
+
+    .section-fourth {
+        padding-top: 0;
+        padding-bottom: 59px;
+    }
+
+    .testimonials h4 {
+        margin-bottom: 18px;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .card-review {
+        padding: 9px 5px;
+    }
+
+    .mt-15 {
+        margin-top: 16px;
+    }
+
+    .leav-bottom-right > img {
+        position: absolute;
+        width: 63px;
+        bottom: -100px;
+        right: -9px;
+        transform: rotate(-17deg);
+    }
+
+
+
+
+
+ footer{
+    padding-bottom: 19px;
+}
+
+.footer-logo {
+    padding-top: 11px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+footer .logo p {
+    padding: 8px 0 0 0;
+    margin: 0 auto;
+    width: 100%;
+    border: none;
+}
+footer .logo {
+    position: relative;
+}
+
+footer .logo::after {
+    top: -49px;
+    content: url(../../assets/icons/bamboo-tablet.svg);
+    left: calc(50% + 11px);
+}
+
+.footer-social {
+    flex-direction: row;
+    top: 43px;
+    left: calc(50% - 98px);
+    justify-content: space-between;
+    width: 202px;
+
+}
+
+.footer-middle {
+    padding: 39px 0 32px;
+    text-align: center;
+}
+
+
+.footer-author {
+    position: absolute;
+
+    bottom: 42px;
+    right: -14px;
+}
+
+.footer-author a {
+    font-size: 15px;
+}
+
+.footer-nav {
+    height: 100px;
+    width: 289px;
+    padding-top: 67px;
+    font-size: 10px;
+    padding-left: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

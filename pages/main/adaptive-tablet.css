@@ -1,0 +1,337 @@
+@media (max-width: 999px) {
+
+    .wrapper-1600 {
+        width: 100%;
+        overflow: hidden;
+        min-width: 640px;
+    }
+
+    .wrapper-1160 {
+        width: 93%;
+        min-width: 600px;
+    }
+
+    .wrapper-976 {
+        width: 600px;
+    }
+
+    .container-for-mobile {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    nav, .designSource {
+        display: none;
+    }
+
+    header {
+        height: 35px;
+        padding: 2px 0 3px 18px;
+        position: fixed;
+        justify-content: space-between;
+    }
+
+    .burger-menu {
+        display: block;
+        margin: 9px 20px 0 0;
+    }
+
+    .logo h1{
+        border: none;
+        height: 30px;
+        width: 47px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        padding: 3px 0 0 3px;
+    }
+
+    .logo::after {
+        content: url("../../assets/icons/bamboo-tablet.svg");
+        top: -16px;
+        left: 5px;
+    }
+
+    .section-header {
+        height: 373px;
+        background-position: 54%;
+    }
+
+    .heading {
+        width: 235px;
+        height: 235px;
+        top: 12%;
+        left: 52%;
+    }
+
+    .section-header button {
+        margin-top: 7%;
+        margin-left: 3%;
+    }
+
+    h2 {
+
+        font-size: 53px;
+        line-height: 77%;
+        top: 38px;
+        left: 40px;
+        width: 249px;
+        letter-spacing: 1px;
+    }
+
+    .bamboo-cap {
+        display: none;
+    }
+
+    .flower-right-top {
+        display: block;
+        right: -29px;
+    bottom: -417px;
+    width: 160px;
+    }
+
+    .description {
+        margin-top: 60px;
+
+    }
+    .d-text-field h3 {
+        font-size: 48px;
+        font-weight: 400;
+        letter-spacing: 0;
+        margin-bottom: 30px;
+    }
+
+    .d-text-field h5 {
+        margin-top: 28px;
+        margin-bottom: 20px;
+    }
+    .d-text-field {
+        padding-left: 4px;
+    }
+
+    .animal-cards {
+        padding-top: 0;
+        margin-top: 42px;
+        height: 756px;
+    }
+
+    .card {
+        margin-top: 0;
+        width: 285px;
+        height: 332px;
+        margin-bottom: 92px;
+    }
+
+    .card:nth-child(5), .card:nth-child(6) {
+        display: none;
+    }
+
+    .card-image {
+        width: 283px;
+        height: 283px;
+    }
+
+    .card-image img{
+        width: 283px;
+        height: auto;
+    }
+
+    .card-image::before {
+        bottom: 282px;
+    }
+
+    .card-image:hover::before {
+        bottom: 0;
+        right: 0;
+    }
+
+    .animal-name h6 {
+        margin: 12px 10px 0px 10px;
+        font-size: 13px;
+        line-height: 9px;
+    }
+
+    .animal-name p {
+        padding: 0px 0 0 0;
+        margin: 0px 10px;
+        font-size: 12px;
+    }
+
+    .arrow-left {
+        left: calc(50% - 75px);
+        top: 790px;
+        z-index: 2;
+    }
+
+    .arrow-right {
+        right: calc(50% - 75px);
+        top: 790px;
+        z-index: 2;
+    }
+
+    .section-second button {
+        margin-bottom: 102px;
+        margin-top: 56px;
+    }
+
+    .flowers-bottom::before {
+
+        left: -61px;
+    }
+
+    .flower-right-bottom {
+        position: absolute;
+        width: 190px;
+        right: -2px;
+        bottom: -3px;
+    }
+    .section-third {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .section-third .wrapper-1160 {
+        width: 640px;
+    }
+
+    h3 {
+        padding: 0px 0 0px 0;
+        margin: 0 0 0px 0px;
+        font-size: 40px;
+        line-height: 54px;
+        letter-spacing: 0.65px;
+    }
+
+    .peek-and-feed {
+        padding: 6px 18px;
+        height: 740px;
+    }
+
+    .first-p {
+        margin-bottom: 5px;
+    }
+
+    .peek-and-feed h4 {
+        margin-top: 29px;
+        margin-bottom: 16px;
+    }
+
+    .widgets-block {
+
+        width: 104%;
+
+        margin: 0 0 0 -19px;
+        justify-content: space-around;
+    }
+
+    .widget:nth-child(1)::after, .widget:nth-child(2)::after {
+        background: url(../../assets/icons/arrow-widget-tablet.svg) no-repeat;
+        width: 100px;
+        height: 150px;
+        top: -16px;
+        left: 137px;
+        z-index: 2;
+    }
+
+    .feed-frend {
+        margin: 38px auto 0;
+    }
+
+    .section-fourth {
+        padding-top: 12px;
+        padding-bottom: 80px;
+    }
+
+    .reviews {
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .card-review {
+        padding: 14px 7px;
+        height: 109px;
+        width: 100%;
+
+        margin-bottom: 15px;
+    }
+
+    .text-review {
+
+        height: 35px;
+
+    }
+
+    .card-review:nth-child(4), .slider-line {
+        display: none;
+    }
+
+    .mt-15 {
+        margin-top: 26px;
+        text-align: center;
+    }
+
+    .button-leave-feedback {
+        width: 240px;
+    }
+
+    .leav-bottom-right > img {
+        position: absolute;
+        width: 121px;
+        bottom: -146px;
+        right: -7px;
+
+    }
+
+    footer {
+        padding: 11px 0 0px;
+    }
+
+    .footer-logo {
+
+    }
+
+    footer .logo::after {
+        position: relative;
+        content: url("../../assets/icons/bamboo.svg");
+        top: -31px;
+        left: 10px;
+    }
+
+    .footer-form {
+        display: none;
+    }
+
+    .footer-middle {
+        padding: 7px 0 32px;
+    }
+
+    .footer-social {
+        position: absolute;
+        top: -18px;
+        right: 0px;
+        z-index: 4;
+        width: 26px;
+
+    }
+
+    .footer-social a {
+        display: block;
+        margin-top: 21px;
+    }
+
+    .social-name {
+        display: none;
+    }
+
+    .footer-nav {
+        height: 100px;
+        width: 442px;
+        padding-top: 55px;
+        font-size: 10px;
+    }
+
+    .footer-author {
+        padding-top: 25px;
+    }
+
+}

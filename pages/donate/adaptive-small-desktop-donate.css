@@ -1,0 +1,113 @@
+@media (max-width: 1599px) {
+
+    .wrapper-1600 {
+        width: 1000px;
+    }
+
+    .wrapper-1160 {
+        width: 940px;
+    }
+
+    .wrapper-976 {
+        width: 845px;
+    }
+
+    header {
+        /* position: relative; */
+        padding: 14px 30px;
+        /* width: 100%; */
+        z-index: 2;
+    }
+
+    nav li {
+        margin-right: 48px;
+    }
+
+    .designSource {
+        width: 137px;
+    }
+
+    .section-header {
+        height: 470px;
+
+        background-image: url("../../assets/images/giant-panda.jpg");
+        background-repeat: no-repeat;
+        background-size: 160%;
+        background-position: 29% 37%;
+    }
+
+    .h2-the-zoo {
+        margin-bottom: 32px;
+    }
+
+    .h5-donation {
+        margin-bottom: 38px;
+    }
+
+    .feed-field {
+        padding-top: 20px;
+        height: 897px;
+    }
+
+    .feed-field p {
+        color: inherit
+    }
+
+    .feed-field h4 {
+        margin-bottom: 10px;
+    }
+
+    .progress-bar {
+        margin: 0 auto;
+        width: 810px;
+        padding: 12px 20px;
+    }
+
+    .amount-summ {
+        margin: 0 auto;
+    }
+
+    .amount-summ-block:nth-child(1) {
+        display: none;
+
+    }
+
+    .amount-summ-block:nth-child(2) {
+        margin-left: 20px;
+
+    }
+
+    .amount-summ-block::before {
+        left: 8px;
+    }
+
+    main {
+        padding-bottom: 30px;
+    }
+
+    .footer-form {
+
+        padding-left: 0px;
+
+    }
+
+    .footer-nav {
+        width: 440px;
+        margin-right: 0px;
+    }
+
+    .footer {
+        padding-bottom: 44px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

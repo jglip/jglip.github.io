@@ -1,0 +1,218 @@
+@media (max-width: 999px) {
+
+    .wrapper-1600 {
+        width: 100%;
+        overflow: hidden;
+        min-width: 640px;
+    }
+
+    .wrapper-1160 {
+        width: 93%;
+        min-width: 600px;
+    }
+
+    .wrapper-976 {
+        width: 600px;
+    }
+
+    nav, .designSource {
+        display: none;
+    }
+
+    header {
+
+        height: 35px;
+        padding: 2px 0 3px 18px;
+        position: fixed;
+        justify-content: space-between;
+    }
+
+    .burger-menu {
+        display: block;
+
+    }
+
+
+    .logo h1{
+        border: none;
+        height: 30px;
+        width: 47px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        padding: 3px 0 0 3px;
+    }
+
+    header .logo::after {
+        display: none;
+    }
+
+    .logo {
+        position: relative;
+    }
+    header .logo::before {
+        content: url("../../assets/icons/bamboo-tablet.svg");
+        top: 13px;
+        left: 5px;
+        position: absolute;
+    }
+
+    .section-header {
+        height: calc(100vw * 0.690625);
+        min-height: 370px;
+        max-height: 469px;
+        background-image: url("../../assets/images/panda_tablet.png");
+        background-size: cover;
+        background-position: 31% 32px;
+    }
+
+    main {
+        padding-bottom: 45px;
+    }
+
+    .h2-the-zoo {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 20px;
+        margin-top: 14px;
+    }
+
+    .h5-donation {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+    .feed-field {
+        padding-top: 32px;
+        height: 889px;
+    }
+
+    .feed-field h4 {
+        margin-left: 0;
+        margin-bottom: 18px;
+    }
+
+    .feed-field h6 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .amount-summ-block:nth-child(1) {
+        display: none;
+
+    }
+    .amount-summ-block:nth-child(2) {
+        display: none;
+
+    }
+    .amount-summ-block:nth-child(3) {
+        display: none;
+
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    .amount-text {
+        padding: 16px 10px 6px;
+
+    }
+
+    .amount-text p {
+        margin-bottom: 0;
+    }
+
+    .amount-summ-block:nth-child(4) {
+        margin-left: 18px;
+
+    }
+    .amount-summ-block::before {
+        left: 17px;
+    }
+
+    .donate-form {
+        height: 212px;
+    }
+
+    .donate-digit-field {
+        width: 182px;
+        height: 42px;
+        background: url(../../assets/icons/dollar-gray.svg) no-repeat top 10px right 10px;
+        padding: 6px;
+    }
+    .donate-block-text-field {
+        text-align: center;
+    }
+
+    .donate-block-radio {
+        padding: 18px 0 1px 26px;
+    }
+    .pb-25 {
+        padding-bottom: 25px;
+    }
+
+    footer {
+        padding: 11px 0 0px;
+    }
+
+
+
+    footer .logo::after {
+        position: relative;
+        content: url("../../assets/icons/bamboo.svg");
+        top: -27px;
+        left: 11px;
+    }
+
+    .footer-form {
+        display: none;
+    }
+
+    .footer-middle {
+        padding: 7px 0 32px;
+    }
+
+    .footer-social {
+        position: absolute;
+        top: -192px;
+        right: -0px;
+        width: 26px;
+    }
+
+    .footer-social a {
+        display: block;
+        margin-top: 21px;
+
+    }
+
+    .social-name {
+        display: none;
+    }
+
+    .footer-end {
+        justify-content:space-between;
+    }
+
+    .footer-nav {
+        height: 100px;
+        width: 390px;
+        padding-top: 55px;
+        font-size: 10px;
+    }
+
+    .footer-author {
+        padding-top: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

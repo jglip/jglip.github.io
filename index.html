@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/fonts.css">
     <link rel="stylesheet" href="pages/main/style.css">
+    <link rel="stylesheet" href="pages/main/adaptive.css">
+    <link rel="stylesheet" href="pages/main/adaptive-tablet.css">
+    <link rel="stylesheet" href="pages/main/adaptive-mobile.css">
     <title>PetStory</title>
 </head>
 <body>
     <div class="wrapper-1600">
-        <section class="section-header">
+        <section class=" section-header">
             <header class="d-flex">
-                <div class="logo">
+                <div class="logo ">
                     <h1><a href="index.html">PetStory online</a></h1>
                 </div>
                 <nav class="">
@@ -30,15 +33,21 @@
                         <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by &#169;</a>
                     </p>
                 </div>
+                <div class="burger-menu">
+                    <span></span>
+                </div>
             </header>
             <div class="heading">
                 <h2>Watch your <span class="f-yellow">favorite</span> animal online</h2>
             </div>
-            <a href="#"><button class="watch-online"><span>Watch online</span></button></a>
+            <div class="block-button-watch-online">
+                <a href="#"><button class="watch-online"><span>Watch online</span></button></a>
+            </div>
+
         </section>
         <main>
             <section class="section-second">
-            <div class="w-100">
+            <div class="flowers ">
                 <img class="flower-right-top" src="assets/images/flower_foto.png" alt="">
 
             </div>
@@ -55,19 +64,20 @@
                   </a>
 
                 <div class="description d-flex">
-                    <div>
-                        <img src="assets/images/bamboo-cap.jpg" alt="Человек в бамбуковой шляпе">
+                    <div class="bamboo-cap">
+                        <img src="assets/images/bamboo-cap.jpg" alt="Человек в бамбуковой шляпе" class="">
                     </div>
-                    <div class="d-text-field">
+                    <div class=" d-text-field">
                         <h3>The Backstage of the Wilderness World.</h3>
                         <P>The site was founded on the basis of a volunteer movement to protect and care for animals.</P>
-                        <h5>How it works</h5>
-                        <p>The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</p>
+                        <h5 class="">How it works</h5>
+                        <p class="">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</p>
                     </div>
 
 
                 </div>
-                <div class="animal-cards   d-flex">
+                <div class="container-for-mobile">
+                  <div class="animal-cards  d-flex">
                     <div class="card">
                         <div class="card-image">
                             <img src="assets/images/pandas.jpg" alt="">
@@ -163,11 +173,13 @@
                     </div>
 
                 </div>
+                </div>
 
-                <a href="map/map.html"><button>Choose your favorite</button></a>
+
+                <a href="map/map.html" class=""><button>Choose your favorite</button></a>
 
             </div>
-            <div class="w-100">
+            <div class="flowers flowers-bottom">
                 <img class="flower-right-bottom" src="assets/images/strelitzia.png" alt="">
                 <img class="flower-left-bottom" src="assets/images/palm_foto.png" alt="">
             </div>
@@ -205,7 +217,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="#"><button class="feed-frend">Feed a friend now</button></a>
+                        <a href="./pages/donate/donate.html"><button class="feed-frend">Feed a friend now</button></a>
                     </div>
                 </div>
             </div>
@@ -289,8 +301,8 @@
                     <div class="slider-line">
                         <div class="slider-line-position"></div>
                     </div>
-                    <div class="mb-180">
-                        <a><button class="radius-5">Leave feedback</button></a>
+                    <div class="mt-15">
+                        <a><button class="radius-5 button-leave-feedback">Leave feedback</button></a>
                     </div>
                 </div>
             </div>
@@ -324,29 +336,29 @@
                         <div class="s-icon">
                             <img src="assets/icons/facebook.svg" alt="">
                         </div>
-                        <span>Facebook</span>
+                        <span class="social-name">Facebook</span>
                     </a>
                     <a href="#">
                         <div class="s-icon">
                             <img src="assets/icons/twitter.svg" alt="">
                         </div>
-                        <span>Twitter</span>
+                        <span class="social-name">Twitter</span>
                     </a>
                     <a href="#">
                         <div class="s-icon">
                             <img src="assets/icons/instagram.svg" alt="">
                         </div>
-                        <span>Instagram</span>
+                        <span class="social-name">Instagram</span>
                     </a>
                     <a href="#">
                         <div class="s-icon">
                             <img src="assets/icons/youtube.svg" alt="">
                         </div>
-                        <span>Youtube</span>
+                        <span class="social-name">Youtube</span>
                     </a>
                 </div>
                 <div class="footer-nav ">
-                    <ul class=" d-flex">
+                    <ul class="d-flex">
                         <li><a class="c-orange" href="index.html">About</a></li>
                         <li><a href="/pages/map/map.html">Map</a></li>
                         <li><a href="#">Zoos</a></li>

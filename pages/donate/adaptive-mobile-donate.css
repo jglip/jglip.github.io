@@ -1,0 +1,287 @@
+@media (max-width: 639px) {
+
+    .wrapper-1600 {
+        width: 100%;
+        overflow: hidden;
+        min-width: 320px;
+    }
+
+    .wrapper-1160 {
+        width: 93%;
+        min-width: 300px;
+    }
+
+    .wrapper-976 {
+        width: 300px;
+
+    }
+
+    nav, .designSource {
+        display: none;
+    }
+
+    header {
+
+        height: 34px;
+        padding: 0px 0 3px 7px;
+        position: fixed;
+        justify-content: space-between;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+
+
+    header .logo::after {
+        top: -17px;
+        left: 5px;
+        content: url("../../assets/icons/bamboo-tablet.svg");
+    }
+
+    .section-header {
+        height: calc(100vw * 0.690625);
+        min-height: 221px;
+        max-height: 369px;
+        background-image: url(../../assets/images/panda_tablet.png);
+        background-size: cover;
+        background-position: 0px 34px;
+
+
+    }
+
+    main {
+        padding-bottom: 20px;
+    }
+
+    .h5-donation {
+        margin-top: 24px;
+        margin-bottom: 28px;
+        font-weight: 300;
+        font-size: 24px;
+    }
+
+    .feed-field h4 {
+        font-weight: 300;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .feed-field {
+        padding-top: 22px;
+        height: 570px;
+
+    }
+
+    .feed-field h6 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .digits {
+        font-weight: 500;
+        font-size: 40px;
+
+    }
+
+    .qty p {
+        padding: 0;;
+        font-size: 9px;
+        margin-left: -2px;
+
+    }
+
+    .qty {
+
+        width: 137px;
+
+        padding-left: 0px;
+        padding-top: 59px;
+    }
+
+    .zoo-pic img {
+        width: 90%;
+        padding-left: 14px;
+    }
+
+    .zoo-pic {
+        padding-left: 6px;
+        padding-top: 0;
+        width: 265px;
+    }
+
+    .portionQty {
+        width: 100%;
+        height: 143px;
+        margin: 0 auto;
+    }
+
+    .icon-x {
+        padding-top: 66px;
+
+        width: 28px;
+    }
+    .icon-x img {
+        width: 8px;
+    }
+
+    .amount-text p{
+        margin: 0 0 6px 0;
+        padding: 0;
+    }
+
+    .amount-text {
+        padding: 0;
+    }
+
+    .amount-number {
+        font-size: 13px;
+        line-height: 120%;
+        padding-top: 7px;
+    }
+
+    .amount-summ-block img {
+        margin-top: 0;
+        width: 5px;
+        margin-top: 5px;
+    }
+
+    .amount-summ-block::before {
+        width: 5px;
+        height: 5px;
+        left: 9px;
+        top: -10px;
+    }
+
+    .progress-bar {
+        height: 14px;
+        padding: 6px 20px;
+    }
+
+    .amount-summ-block:nth-child(4) {
+        margin-left: 8px;
+    }
+
+    .w-130 {
+        width: 65px;
+    }
+
+    .amount-summ-block {
+        padding-top: 0;
+    }
+
+    .amount-summ {
+        padding-bottom: 3px;
+    }
+
+    .donate-block-text-field {
+        padding: 13px 15px 7px;
+    }
+
+    .pb-25 {
+        padding-bottom: 23px;
+    }
+
+    .amount p {
+        letter-spacing: -0.01px;
+        text-align: left;
+        padding: 0;
+        margin-top: 0px;
+        font-weight: 400;
+    }
+
+    footer{
+        padding-bottom: 19px;
+    }
+
+    .footer-logo {
+
+        width: 100%;
+    }
+
+
+    .logo p {
+        padding: 8px 0 0 0;
+        margin: 0 auto;
+        width: 300px;
+        border: none;
+    }
+    footer .logo {
+        position: relative;
+    }
+
+    footer .logo::after {
+        top: -47px;
+
+        left: calc(50% + 8px);
+    }
+
+    .footer-social {
+        flex-direction: row;
+        top: -164px;
+        left: calc(50% - 101px);
+        justify-content: space-between;
+        width: 202px;
+
+    }
+
+    .footer-middle {
+        padding: 39px 0 32px;
+        text-align: center;
+    }
+
+
+    .footer-author {
+        position: absolute;
+
+        bottom: 42px;
+        right: -14px;
+    }
+
+    .footer-author a {
+        font-size: 15px;
+    }
+
+    .footer-nav {
+        height: 100px;
+        width: 289px;
+        padding-top: 67px;
+        font-size: 10px;
+        padding-left: 11px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
