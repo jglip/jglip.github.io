@@ -69,7 +69,7 @@
 
     .block-button-watch-online {
         text-align: center;
-        /* padding: 0 5px 0 0; */
+ 
     }
 
     .section-header button {
@@ -83,6 +83,10 @@
         right: -43px;
         bottom: -204px;
         width: 75px;
+    }
+    
+    .description {
+        width: 93%;
     }
 
     .d-text-field {
@@ -114,6 +118,7 @@
     .animal-cards {
         height: 1349px;
         margin-top: 0px;
+        justify-content: center;
 
     }
     .card {
@@ -298,50 +303,6 @@ footer .logo::after {
     font-size: 10px;
     padding-left: 11px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
