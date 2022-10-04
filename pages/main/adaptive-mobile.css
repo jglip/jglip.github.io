@@ -73,14 +73,14 @@
 
     .section-header button {
         margin-top: 122px;
-        /* margin-left: 12px; */
+        margin-right: 10px;
         margin-bottom: 30px;
     }
 
     .flower-right-top {
         display: block;
         right: -43px;
-        bottom: -190px;
+        bottom: -204px;
         width: 75px;
     }
 
