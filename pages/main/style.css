@@ -43,7 +43,64 @@ header {
 
     color: white;
 
+}/* /////////////////  burger  /////////////// */
+
+.logo-burger-li {
+    display: none;
+
 }
+
+#menuToggle, .menu-btn {
+    display: none;
+}
+
+
+
+.menu-btn {
+
+    width: 18px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 20px 0 auto;
+}
+
+.menu-btn > span::before, .menu-btn>span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+}
+
+.menu-btn>span::before {
+    top: -4px;
+}
+.menu-btn>span::after {
+    bottom: -4px;
+}
+
+.menu-btn span {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+}
+
+.dark-field {
+    display: none;
+}
+
+
+
+/* .............burger.................... */
+
+
 
 .logo h1, .logo p {
 
@@ -87,6 +144,10 @@ header {
     color: #FB8441;
 }
 
+.logo-burger-li {
+    display: none;
+}
+
 nav, .designSource {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -95,8 +156,9 @@ nav, .designSource {
 }
 
 nav {
-    width: 948px;
-    margin-left: 24px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 24px;
 }
 
 nav a, .designSource a {
@@ -108,46 +170,16 @@ nav a:hover, .designSource a:hover {
     color: #FB8441;
 }
 
+.designSource {
+    margin-left: auto;
+    text-align: right;
+    margin-right: 0;
+}
+
 nav li {
 
     list-style-type: none;
     margin-right: 58px;
-}
-
-.burger-menu {
-    display: none;
-    width: 18px;
-    height: 10px;
-    position: relative;
-    align-items: center;
-    margin: 12px 10px 0 0;
-}
-
-.burger-menu::before, .burger-menu::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    left: 0;
-}
-
-.burger-menu::before {
-    top: 0;
-}
-.burger-menu::after {
-    bottom: 0;
-}
-
-.burger-menu span {
-    display: block;
-    position: absolute;
-    top: 4px;
-    left: 0;
-    background-color: #fff;
-    width: 100%;
-    height: 2px;
 }
 
 .section-header {
@@ -636,11 +668,17 @@ h4 {
 }
 
 .card-review {
+
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    justify-content: space-between;
+
+    margin: 0 14.5px;
     box-sizing: border-box;
     width: 268px;
     height: 391px;
     padding: 13px;
-    /* overflow: hidden; */
+    /* overflow hidden; */
     position: relative;
 
     background-color: #F1F3F2;
@@ -683,7 +721,7 @@ h4 {
 
 .user-pic {
     display: inline-block;
-    width: 37px;
+      width: 37px;
     height: 37px;
 }
 
@@ -713,11 +751,33 @@ h4 {
     color: #bdbdbd;
 }
 
-.slider-line {
+.slider-box {
+    overflow: hidden;
+}
+
+.card-review:first-child {
+    /* margin-left: -0px; */
+    transition: 1s;
+  }
+
+.slide-range-container {
+    width: 600px;
+    margin: 0px auto 40px;
+}
+
+.slider-range {
+    -webkit-appearance: none;
+    /* outline: none; */
+     /* opacity: 0.7; */
+     /*
+    -webkit-transition: .2s;
+    transition: opacity .2s; */
+    /*  */
+
     box-sizing: border-box;
     margin: 21px auto 31px;
-    width: 599px;
-    height: 8px;
+    width: 100%;
+    height: 7px;
 
     border-radius: 5px;
     position: relative;
@@ -728,27 +788,31 @@ h4 {
     background-clip: padding-box;
 }
 
-.slider-line:before {
-    content: "";
+.slider-range:hover {
+    opacity: 1;
+}
+
+.slider-range:before {
+content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -0.5px;
   z-index: -1;
-  margin: -1px;
+  margin: -1px -1px;
   border-radius: inherit;
+
   background: linear-gradient(315deg, rgb(254, 189, 171), rgb(243, 169, 248) 65%, rgb(205, 215, 240) 89%);
 }
 
-.slider-line-position {
-    position: absolute;
-    width: 115px;
-    height: 6px;
-    left: calc(50% - 115.19px/2 - 242.4px + 3px);
-    top: 0px;
-
-    background: #FE9013;
+.slider-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12.5%;
+    height: 4px;
+    background: orange;
+    cursor: pointer;
     border-radius: 5px;
 }
 

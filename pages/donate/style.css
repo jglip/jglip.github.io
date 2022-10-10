@@ -26,6 +26,8 @@ body {
     margin: 0 auto;
 }
 
+
+
 .pos-rel {
     position: relative;
 }
@@ -43,8 +45,8 @@ h2 {
 font-style: normal;
 font-weight: 400;
 font-size: 36px;
-    line-height: 130%;
-/* identical to box height, or 58px */
+line-height: 130%;
+
 padding-top: 11px;
 
 }
@@ -121,16 +123,29 @@ header {
 
 }
 
-.burger-menu {
+/* /////////////////  burger  /////////////// */
+
+.logo-burger-li {
     display: none;
+
+}
+
+#menuToggle, .menu-btn {
+    display: none;
+}
+
+
+
+.menu-btn {
+
     width: 18px;
     height: 10px;
     position: relative;
-    align-items: center;
-    margin: 12px 10px 0 0;
+    cursor: pointer;
+    margin: 10px 20px 0 auto;
 }
 
-.burger-menu::before, .burger-menu::after {
+.menu-btn > span::before, .menu-btn>span::after {
     content: '';
     display: block;
     position: absolute;
@@ -140,14 +155,14 @@ header {
     left: 0;
 }
 
-.burger-menu::before {
-    top: 0;
+.menu-btn>span::before {
+    top: -4px;
 }
-.burger-menu::after {
-    bottom: 0;
+.menu-btn>span::after {
+    bottom: -4px;
 }
 
-.burger-menu span {
+.menu-btn span {
     display: block;
     position: absolute;
     top: 4px;
@@ -157,6 +172,13 @@ header {
     height: 2px;
 }
 
+.dark-field {
+    display: none;
+}
+
+
+
+/* .............burger.................... */
 
 .logo h1, .logo p {
 
@@ -209,7 +231,7 @@ nav, .designSource {
 
 nav {
     box-sizing: border-box;
-    width: 973px;
+    width: 100%;
     padding-left: 24px;
 }
 
@@ -220,6 +242,12 @@ nav a, .designSource a {
 
 nav a:hover, .designSource a:hover {
     color: #FB8441;
+}
+
+.designSource {
+    margin-left: auto;
+    text-align: right;
+    margin-right: 0;
 }
 
 
@@ -237,18 +265,6 @@ nav li {
     background-size: 100%;
     background-position: 70% 37%;
 
-}
-
-.heading {
-    width: 467px;
-    height: 467px;
-    border-radius: 50%;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-
-    position: relative;
-    top: 11px;
-    left: 806px;
-    order: 1;
 }
 
 main {
@@ -361,7 +377,7 @@ color: #000000;
 
 }
 
-.amount {
+/* .amount {
     flex-direction: column;
 
 }
@@ -463,9 +479,6 @@ color: #333B41;
     border-radius: 2px;
     border: 1px solid #929699;
 
-    /* font-size: 24px;
-    font-weight: 500; */
-
     background: url(../../assets/icons/dollar-gray.svg) no-repeat top 17px right 9px;
     padding: 10px;
 }
@@ -548,7 +561,263 @@ label {
     padding-left: 5px;
     padding-top: 0;
 
+} */
+
+
+
+/* //////////////////////////////////// */
+
+.amount-progress-bar {
+    position: relative;
 }
+
+.amount {
+    flex-direction: column;
+
+}
+.amount-text {
+    box-sizing: border-box;
+    padding: 24px 5px 0px;
+}
+
+.progress-bar {
+
+    box-sizing: border-box;
+    height: 27px;
+    width: 100%;
+    background-color: #333b41;
+    border-radius: 2px;
+    padding: 13px 26px;
+    position: relative;
+    flex-direction: column;
+    position: relative;
+    bottom: -29px;
+}
+
+.summ-radio-btn {
+   justify-content: space-between;
+    width: 40px;
+    height: 43px;
+    position: relative;
+
+}
+
+.summ-line {
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.label-summ::before {
+    box-sizing: border-box;
+    content: '';
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: url("../../assets/icons/Ellipse.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 50%;
+
+    top: -5px;
+    left: 0px;
+    border-radius: 50%;
+
+    z-index: 5;
+    cursor: pointer;
+}
+
+.span-summ {
+    display: block;
+    width: 125px;
+    font-size: 26px;
+    position: relative;
+    height: 50px;
+}
+.span-summ-last {
+    width: 45px;
+}
+
+.label-summ:hover::before {
+    outline: 2px solid #FE9013;
+    outline-offset: -9px;
+}
+
+.label-summ:hover {
+    color:#FE9013;
+    cursor: pointer;
+}
+.summ-radio-btn:checked + .label-summ::before{
+    border: 2px solid #FE9013;
+    box-sizing: padding-box;
+    outline: 2px solid #FE9013;
+    outline-offset: -9px;
+    color: #FE9013;
+}
+
+.summ-radio-btn:checked + .label-summ {
+    color:#FB8441;
+}
+
+.pr-bar-middle-line {
+
+    width: 100%;
+    height: 2px;
+    background-color: #bdbdbd;
+}
+
+.w-130 {
+    width: 130px;
+}
+
+.w-65 {
+    width: 65px;
+}
+
+.amount-summ {
+    padding-bottom: 35px;
+}
+
+.amount-summ-block {
+    box-sizing: border-box;
+    padding-top: 12px;
+    position: relative;
+}
+
+.amount-summ-block .c-orange {
+    color:#FB8441
+}
+
+.amount-summ-block:hover::before ~ #summ {
+    color:#FB8441
+}
+
+.amount-summ-block img {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-right: -2px;
+    width: 10px;
+    height: 20px;
+}
+
+.amount-number {
+    display: inline-block;
+    font-weight: 500;
+font-size: 26px;
+line-height: 140%;
+text-transform: uppercase;
+vertical-align: top;
+color: #333B41;
+}
+
+.donate-form {
+    height: 220px;
+    width: 300px;
+    margin: 0 auto;
+    flex-direction: column;
+    padding-top: 2px;
+}
+
+.p-15 {
+    padding: 13px 15px;
+}
+
+
+.donate-digit-field {
+    box-sizing: border-box;
+    width: 268px;
+    height: 54px;
+    border-radius: 2px;
+    border: 1px solid #929699;
+    background: url(../../assets/icons/dollar-gray.svg) no-repeat top 17px right 9px;
+    padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]:active, .donate-text-field:focus  {
+    border-color: #4B9200;
+}
+
+
+.pg-14 {
+    padding: 0 14px 0 16px;
+}
+
+.donate-block-radio {
+    justify-content: center;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 0 1px 27px;
+
+}
+
+.donate-digit-field {
+    padding: 0 25px 0 15px;
+}
+
+.radio {
+    display:none;
+}
+
+.radio + s {
+    border: 1px solid #FE9013;
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background: white;
+    display:inline-block;
+    margin: 2px 0px 0 0px;
+}
+
+.radio:checked + s
+{
+    box-sizing: border-box;
+    background: #4b9200;
+    border-radius: 50%;
+    border: none;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    padding: 0px 0 0 0px;
+}
+
+label {
+    vertical-align: top;
+    margin-left: 7px;
+
+}
+
+.period {
+    cursor: pointer;
+}
+
+.pb-25 {
+    padding-bottom: 27px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+    padding-top: 0;
+
+}
+
+/* ///////////////////////////////////// */
 
 /* ///////////////////////////////////////////////// */
 /* ///////////// F  O  O  T  E  R  //////////////// */

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="adaptive-small-desktop-donate.css">
     <link rel="stylesheet" href="adaptive-tablet-donate.css">
     <link rel="stylesheet" href="adaptive-mobile-donate.css">
+
     <title>Donate</title>
 </head>
 <body>
@@ -19,23 +20,26 @@
                 <div class="logo ">
                     <h1><a href="../../index.html">PetStory online</a></h1>
                 </div>
-                <nav>
-                    <ul class="d-flex" >
-                        <li><a  class="" href="../../index.html" >About</a></li>
-                        <li><a href="#">Map</a></li>
-                        <li><a href="#">Zoos</a></li>
-                        <li class="c-orange">Donate</li>
-                        <li><a href="#">Contact us</a></li>
+                <nav >
+                    <input id="menuToggle" class="b" type="checkbox" />
+                    <label class="menu-btn " for="menuToggle">
+                        <span></span>
+                    </label>
+                    <ul class="d-flex menu-box" >
+                        <li class="logo-burger-li">
+                            <div class="logo-burger">
+                                <p><a href="../../index.html">PetStory online</a></p>
+                            </div>
+                        </li>
+                        <li class="menu-item"><a  class="" href="../../index.html" >About</a></li>
+                        <li class="menu-item"><a href="#">Map</a></li>
+                        <li class="menu-item"><a href="#">Zoos</a></li>
+                        <li class="menu-item c-orange"><a href="./donate.html">Donate</a></li>
+                        <li class="menu-item"><a href="#">Contact us</a></li>
+                        <li class="menu-item designSource"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by &#169;</a></li>
                     </ul>
+                    <label class="dark-field" for="menuToggle"></label>
                 </nav>
-                <div class="designSource">
-                    <p>
-                        <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by &#169;</a>
-                    </p>
-                </div>
-                <div class="burger-menu">
-                    <span></span>
-                </div>
             </header>
 
         </section>
@@ -68,7 +72,55 @@
                             </div>
 
                         </div>
-                        <div class="amount d-flex">
+
+                        <form  class="amount d-flex" action="">
+                            <div class="amount-text">
+                                <p>Amount</p>
+                            </div>
+                            <div class="amount-progress-bar ">
+                                <div class="progress-bar d-flex" >
+                                    <div class="pr-bar-middle-line">
+                                    </div>
+                                </div>
+                                <div class="d-flex summ-line">
+                                    <input type="radio" class="summ-radio-btn" name="donate-summ" id="donate-5000">
+                                    <label class="label-summ" for="donate-5000"><span class="span-summ ">5000</span></label>
+                                    <input type="radio" class="summ-radio-btn" name="donate-summ" id="donate-2000">
+                                    <label class="label-summ" for="donate-2000"><span class="span-summ">2000</span></label>
+                                    <input type="radio" class="summ-radio-btn" name="donate-summ" id="donate-1000" checked>
+                                    <label class="label-summ" for="donate-1000"><span class="span-summ">1000</span></label>
+                                    <input type="radio" class="summ-radio-btn" name="donate-summ" id="donate-500">
+                                    <label class="label-summ" for="donate-500"><span class="span-summ">500</span></label>
+                                    <input type="radio" class="summ-radio-btn" name="donate-summ" id="donate-250">
+                                    <label class="label-summ" for="donate-250"><span class="span-summ">250</span></label>
+                                    <input type="radio" class="summ-radio-btn" name="donate-summ" id="donate-100">
+                                    <label class="label-summ" for="donate-100"><span class="span-summ">100</span></label>
+                                    <input type="radio" class="summ-radio-btn" name="donate-summ" id="donate-50">
+                                    <label class="label-summ" for="donate-50"><span class="span-summ">50</span></label>
+                                    <input type="radio" class="summ-radio-btn" name="donate-summ" id="donate-25">
+                                    <label class="label-summ" for="donate-25"><span class="span-summ span-summ-last ">25</span></label>
+                                </div>
+                            </div>
+                        </form>
+
+                    <form action="" class="donate-form d-flex ">
+                        <div class="donate-block-text-field p-15">
+                            <input class="donate-digit-field" type="number"  max="9999" maxlength="4" pattern="[0-9]{4}" name="" id="" placeholder="Another amount">
+                        </div>
+                        <div class="d-flex  pb-25 pg-14">
+                            <div class="donate-block-radio  ">
+                                <input class="radio " type="radio" name="period" id="pay-monthly">
+                                <s></s>
+                                <label for="pay-monthly" class="period">Monthly</label>
+                            </div>
+                            <div class="donate-block-radio p-15 ">
+                                <input class="radio " type="radio" name="period" id="pay-once" checked>
+                                <s></s>
+                                <label  class="period" for="pay-once">Once</label>
+                            </div>
+                        </div>
+                    </form>
+                        <!-- <div class="amount d-flex">
                             <div class="amount-text">
                                 <p>Amount</p>
                             </div>
@@ -130,7 +182,7 @@
                                 </div>
                             </form>
                             <p class="t-center pl-5">Share with your friends on social networks</p>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
